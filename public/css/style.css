@@ -1,7 +1,5 @@
 body{
-    background-image: url('../images/pexels-polina-tankilevitch-4109744.jpg');
-    background-size: cover;
-    background-position-y: -100px;
+
 }
 
 *{
@@ -13,9 +11,19 @@ body{
     list-style: none;
     color: #000;
 }
+
 .container{
     max-width: 1200px;
-    margin: 0px auto;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 section{
@@ -51,13 +59,19 @@ nav{
     border: none;
     background: transparent;
     outline: none;
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
 }
 
 
 
 .search > i {
     position: absolute;
-    
+    margin-left: -15px;
+    padding: 10px 15px;
+    justify-items: center;
+    align-items: center;
     
 }
 
@@ -170,6 +184,210 @@ nav{
   .dot.active{
     background-color: #333;
   }
+/*----------Sản phẩm trang chủ----------*/
+.sanpham{
+    margin-top: 20px;
+}
+.sanpham-title{
+    border-bottom: 2px solid #000000;
+}
+.sanpham-content{
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.sanpham-content-items{
+    width: calc(25% - 12px);
+    text-align: center;
+    padding: 12px 0;
+}
+.sanpham-content-items img{
+    width: 100%;
+}
+
+/*----------Danh Mục Sản phẩm trang chủ----------*/
+.danhmucsanpham{
+    margin-top: 20px;
+}
+.danhmucsanpham-title{
+    border-bottom: 2px solid #000000;
+}
+.danhmucsanpham-content{
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.danhmucsanpham-content-items{
+    width: calc(25% - 12px);
+    text-align: center;
+    padding: 12px 0;
+}
+.danhmucsanpham-content-items img{
+    width: 100%;
+}
+
+
+/*---------------Category-------------*/
+.category{
+    padding: 100px 0 0;
+}
+
+.category-top{
+    margin-bottom: 50px;
+}
+
+.category-top p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 12px;
+    font-size: 12px;
+}
+
+.category-left{
+    width: 20%;
+}
+
+.category-right{
+    width: 80%;
+}
+
+.category-right-top-item:first-child{
+    flex: 2;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.category-right-top-item{
+    flex: 1;
+    padding: 0 12px;
+}
+
+.category-right-top-item button{
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+}
+
+.category-right-top-item select{
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+}
+
+.category-right-content{
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.category-right-content-item{
+    width: calc(25% - 12px);
+    text-align: center;
+    padding: 12px 0;
+}
+
+.category-right-content-item h1{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 6px;
+    color: #333333;
+    
+}
+
+.category-right-content-item img{
+    width: 100%;
+}
+
+.category-right-content-item p{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.category-right-bottom{
+    justify-content: space-between;
+    margin: 30px 0 20px;
+    width: 100%;
+}
+
+.category-right-bottom p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.category-left ul li{
+    padding: 12px 0;
+}
+
+.category-left ul li>a{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.category-left ul li ul li{
+    padding-left: 10px;
+}
+
+.category-left-li ul{
+    display: none;
+}
+
+.category-left-li.block ul{
+    display: block;
+}
+
+.category-left ul li ul li a{
+    color: #333333;
+    font-size: 12px;
+}
+
+/*____________Product____________*/
+
+.product{
+    padding: 100px 0;
+}
+
+.product-top{
+    margin-bottom: 30px;
+}
+
+.product-top p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 12px;
+    font-size: 12px;
+}
+
+.product-content-left{
+    width: 50%;
+}
+
+.product-content-left-big-img{
+    width: 80%;
+    margin-right: 20px;
+}
+
+.product-content-left-small-img{
+    width: 20%;
+}
+
+.product-content-left-big-img img{
+    width: 100%;
+}
+
+.product-content-left-small-img img{
+    width: 100%;
+}
+
+.product-content-right{
+    width: 50%;
+    padding-left: 20px;
+}
 
 
 
@@ -179,9 +397,11 @@ nav{
 
 
 
+/*-----------------footer----------------*/
   footer{
     text-align: center;
     background-color: #ffffff;
+    border-top: 1px solid #000000;
   }
 
 .footer-top ul{
